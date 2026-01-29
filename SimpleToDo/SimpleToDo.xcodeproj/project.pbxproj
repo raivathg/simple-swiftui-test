@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,7 +20,18 @@
 		AD975CDF28253BE00042EAE4 /* ToDoItem+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD975CDE28253BE00042EAE4 /* ToDoItem+Preview.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1C41858B2F2AF93D00ED4927 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 510F4319281D95BC0060A05A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 510F4320281D95BC0060A05A;
+			remoteInfo = SimpleToDo;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1C4185852F2AF93D00ED4927 /* SimpleToDoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleToDoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		510F4321281D95BC0060A05A /* SimpleToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		510F4324281D95BC0060A05A /* SimpleToDoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleToDoApp.swift; sourceTree = "<group>"; };
 		510F4326281D95BC0060A05A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,7 +46,18 @@
 		AD975CDE28253BE00042EAE4 /* ToDoItem+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDoItem+Preview.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		1C4185862F2AF93D00ED4927 /* SimpleToDoUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = SimpleToDoUITests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
+		1C4185822F2AF93D00ED4927 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		510F431E281D95BC0060A05A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -50,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				510F4323281D95BC0060A05A /* SimpleToDo */,
+				1C4185862F2AF93D00ED4927 /* SimpleToDoUITests */,
 				510F4322281D95BC0060A05A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				510F4321281D95BC0060A05A /* SimpleToDo.app */,
+				1C4185852F2AF93D00ED4927 /* SimpleToDoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,6 +115,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1C4185842F2AF93D00ED4927 /* SimpleToDoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C41858F2F2AF93D00ED4927 /* Build configuration list for PBXNativeTarget "SimpleToDoUITests" */;
+			buildPhases = (
+				1C4185812F2AF93D00ED4927 /* Sources */,
+				1C4185822F2AF93D00ED4927 /* Frameworks */,
+				1C4185832F2AF93D00ED4927 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C41858C2F2AF93D00ED4927 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				1C4185862F2AF93D00ED4927 /* SimpleToDoUITests */,
+			);
+			name = SimpleToDoUITests;
+			packageProductDependencies = (
+			);
+			productName = SimpleToDoUITests;
+			productReference = 1C4185852F2AF93D00ED4927 /* SimpleToDoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		510F4320281D95BC0060A05A /* SimpleToDo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 510F432F281D95BC0060A05A /* Build configuration list for PBXNativeTarget "SimpleToDo" */;
@@ -116,9 +163,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1330;
+				LastSwiftUpdateCheck = 2620;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
+					1C4185842F2AF93D00ED4927 = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = 510F4320281D95BC0060A05A;
+					};
 					510F4320281D95BC0060A05A = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
@@ -138,11 +189,19 @@
 			projectRoot = "";
 			targets = (
 				510F4320281D95BC0060A05A /* SimpleToDo */,
+				1C4185842F2AF93D00ED4927 /* SimpleToDoUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1C4185832F2AF93D00ED4927 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		510F431F281D95BC0060A05A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -176,6 +235,13 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1C4185812F2AF93D00ED4927 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		510F431D281D95BC0060A05A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -194,7 +260,66 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1C41858C2F2AF93D00ED4927 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 510F4320281D95BC0060A05A /* SimpleToDo */;
+			targetProxy = 1C41858B2F2AF93D00ED4927 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		1C41858D2F2AF93D00ED4927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "xcode-cloud-POC.SimpleToDoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SimpleToDo;
+			};
+			name = Debug;
+		};
+		1C41858E2F2AF93D00ED4927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "xcode-cloud-POC.SimpleToDoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SimpleToDo;
+			};
+			name = Release;
+		};
 		510F432D281D95BC0060A05A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -370,6 +495,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1C41858F2F2AF93D00ED4927 /* Build configuration list for PBXNativeTarget "SimpleToDoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C41858D2F2AF93D00ED4927 /* Debug */,
+				1C41858E2F2AF93D00ED4927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		510F431C281D95BC0060A05A /* Build configuration list for PBXProject "SimpleToDo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
